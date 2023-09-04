@@ -9,11 +9,11 @@
     text-underline-offset: 3.5px;
 }
 
-.menu {
+.header__menu {
     align-self: center;
 }
 
-.header-menu {
+.header__links-list {
     display: flex;
     /* align-self: center; */
     font-size: 18px;
@@ -22,10 +22,15 @@
     gap: 32px;
 }
 
-ul > li:first-child {
+.header__links-list-item_no-bullit {
     list-style-type: none;
     text-decoration: none;
 }
+
+/* ul > li:first-child {
+    list-style-type: none;
+    text-decoration: none;
+} */
 
 .contacts {
     display: flex;
@@ -36,7 +41,7 @@ ul > li:first-child {
 }
 
 
-.logo {
+.header__logo {
     width: 140px;
 }
 
