@@ -1,5 +1,7 @@
 /* место для вашего кода */
 
+/*header*/
+
 .header {
     display: flex;
     width: 1440px;
@@ -32,7 +34,7 @@
     text-decoration: none;
 } */
 
-.contacts {
+.address {
     display: flex;
     flex-direction: column;
     font-size: 135%;
@@ -40,10 +42,11 @@
     text-underline-offset: 5.5px;
 }
 
-
 .header__logo {
     width: 140px;
 }
+
+/*cover*/
 
 .cover {
     display: flex;
@@ -54,7 +57,7 @@
     height: 757px;
 }
 
-.title {
+.cover__title {
     display: flex;
     flex-direction: column;
     color: #FFF;

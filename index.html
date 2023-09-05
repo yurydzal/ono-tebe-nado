@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="fonts\fonts.css" />
-    <link rel="stylesheet" href="styles\global.css" />
-    <link rel="stylesheet" href="styles\style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
@@ -19,21 +19,25 @@
         </ul>
       </nav>
       <div class="header__logo">
-        <img src="images\logo-black.svg">
+        <img class="header__logo-image" alt="логтип" src="images/logo-black.svg">
       </div>
-      <div class="contacts">
+      <div class="contacts ">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263-265,<br>Амстердам</p>
+        <p class="header__address">наб. Принсенграхт 263-265,<br>Амстердам</p>
       </div>
     </header>
     <main clas="main">
       <section class="cover">
-        <h1 class="title">
-          <span>оно</span><span>тебе</span><span>надо</span>
+        <h1 class="cover__title">
+          <span class="aligned-text">он<span class="letter-spacing-extended">о</span></span>
+          <span class="aligned-text_center">тебе</span>
+          <span class="aligned-text_right">надо</span>
         </h1>
-        <p>Аукцион вещей, в которые никто не верил</p>
-        <div class="button">
+        <div class="cover__description">
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button class="bet-button" type="button">сделать ставку</button>
+        </div>
       </section>
       <section class="lots" id="lots">
         <h2 class="section-title">Лоты</h2>
@@ -66,13 +70,18 @@
         <p class="more">посмотреть больше</p>
       </section>
       <section class="about" id="about">
-        <h2 class="section-title">Об аукционе</h2>
-        <p>
-          Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
-        </p>
-        <p>
-          Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.
-        </p>
+        <div class="about__column">
+          <div class="about__logo">
+            <img class="about__logo-image" alt="логотип" src="images/logo-black.svg">
+          </div>
+          <h2 class="about__title">Об аукционе</h2>
+          <p class="about__text">
+            Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+          </p>
+          <p class="about__text">
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.
+          </p>
+      </div>
       </section>
     </main>
     <footer class="footer">

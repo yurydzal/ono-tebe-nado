@@ -1,0 +1,63 @@
+header
+
+	menu / header__menu — контейнер навигации;
+	header-menu / header__links-list — список ссылок;
+	header__links-list-item — пункт списка ссылок;
+	ul > li:first-child / header__links-list-item_no-bullit — вам может потребоваться этот класс, чтобы сделать ссылку без кружочка перед ней;
+	header__link — ссылка;
+	header__link_active — активная ссылка;
+	logo / header__logo — контейнер логотипа;
+	header__logo-image — картинка с логотипом;
+	contacts / address — контейнер с адресом;
+	header__address — потребуется, чтобы выравнивать блок с адресом. В футере используется другое выравнивание.
+
+main
+
+	cover
+
+		cover — вся секция;
+		overlay — полупрозрачный блок поверх секции;
+		title / cover__title — заголовок;
+		aligned-text, aligned-text_center и aligned-text_right — классы для выравнивания строк текста и превращения их в блочный элемент;
+		letter-spacing-extended — класс для управления межбуквенным расстоянием в местах, где есть эти акценты;
+		no-letter-spacing — класс для обнуления общего межбуквенного расстояния для последней буквы;
+		cover__description — контейнер для подзаголовка и кнопки;
+		cover__description-text — текст подзаголовка;
+		bet-button — кнопка «Сделать ставку».
+
+	! lots
+
+		lots — вся секция;
+		lots__heading — заголовок секции;
+		lots__card-list — список карточек;
+		lots__card-list-item — пункт списка карточки;
+		card-link — ссылка, обрамляющая карточку;
+		card — карточка;
+		card_type_film, card_type_book и card_type_picture — классы, чтобы задать определённый фон каждой из карточек;
+		overlay — он уже есть у вас в коде;
+		card__title — заголовок карточки;
+		card__text — текст карточки;
+		lots__look-more-link — ссылка «Посмотреть больше».
+
+	about
+
+		about — вся секция;
+		about__column — класс для колонок;
+		about__logo — контейнер с логотипом;
+		about__logo-image — изображение логотипа;
+		title / about__title — заголовок секции;
+		about__text — блок для текстов секции.
+
+footer
+
+	footer — подвал;
+	contacts / address — такой класс уже есть в вашей вёрстке, все вложенные элементы аналогичны;
+	footer__menu — блок навигации по списку ссылок. Мы рекомендуем окружать список тегом <nav> с этим классом;
+	footer__menu-list — список пунктов меню;
+	footer__menu-list-item — пункт списка меню;
+	footer__menu-link — ссылка меню;
+	footer__menu-link_active — активная ссылка меню (без подчеркивания);
+	footer__social-list — список ссылок на социальные сети. Можно не добавлять тег <nav>, потому что это ссылки на внешние ресурсы;
+	footer__social-list-item — пункт списка ссылок на социальные сети;
+	footer__social-link — ссылка на социальные сети;
+	footer__social-icon – иконка социальной сети.
