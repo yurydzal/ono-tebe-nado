@@ -61,3 +61,49 @@ footer
 	footer__social-list-item — пункт списка ссылок на социальные сети;
 	footer__social-link — ссылка на социальные сети;
 	footer__social-icon – иконка социальной сети.
+
+
+
+.header {
+    display: flex;
+    width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 92px 49px 92px 51px;
+    text-underline-offset: 3.5px;
+}
+
+.header__menu {
+    align-self: center;
+}
+
+.header__links-list {
+    display: flex;
+    /* align-self: center; */
+    font-size: 18px;
+    list-style-type: circle;
+    text-decoration: underline;
+    gap: 32px;
+}
+
+.header__links-list-item_no-bullit {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* ul > li:first-child {
+    list-style-type: none;
+    text-decoration: none;
+} */
+
+.address {
+    display: flex;
+    flex-direction: column;
+    font-size: 135%;
+    align-self: center;
+    text-underline-offset: 5.5px;
+}
+
+.header__logo {
+    width: 140px;
+}
