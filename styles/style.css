@@ -11,6 +11,16 @@
     text-underline-offset: 3.5px;
 }
 
+.cover::before,
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
 /* header */
 
 /* Найдите такое решение, чтобы левая колонка была такого же размера, как карточка выше, а правая занимала всё оставшееся пространство.  */
@@ -74,13 +84,6 @@
 
 /*cover - section*/
 
-.overlay {
-    width: 100%;
-    background-color: rgba(255, 255, 255);
-    opacity: 0.6;
-
-}
-
 .cover {
     width: 100%;
     display: flex;
@@ -104,6 +107,7 @@
     letter-spacing: 30px;
     gap: 10px;
     margin-top: 115px;
+    position: relative;
 }
 
 .aligned-text {
@@ -132,6 +136,7 @@
     font-size: 22px;
     line-height: 128%;
     gap: 78px;
+    position: relative;
 }
 
 .cover__description-text {
@@ -151,8 +156,6 @@
     width: 257px;
     height: 52px;
 }
-
-
 
 /* lots - section */
 
@@ -182,7 +185,9 @@
 }
 
 .card-link {
-
+    display: block;
+    text-decoration-line: none;
+    height: 100%;
 }
 
 .card {
@@ -190,16 +195,12 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 40px;
-
     width: 430px;
     min-height: 450px;
-
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFF;
-
     position: relative;
-    z-index: -1;
 }
 
 .card_type_film {
@@ -220,11 +221,13 @@
     text-transform: uppercase;
     text-decoration-line: underline;
     text-underline-offset: 2.5px;
+    position: relative;
 }
 
 .card__text {
     font-size: 20px;
     line-height: 120%;
+    position: relative;
 }
 
 /* about - section*/
