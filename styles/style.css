@@ -23,8 +23,6 @@
 
 /* header */
 
-/* Найдите такое решение, чтобы левая колонка была такого же размера, как карточка выше, а правая занимала всё оставшееся пространство.  */
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -34,45 +32,45 @@
 }
 
 .header__menu {
-
+    flex: 1 1 0;
 }
 
 .header__links-list {
     display: flex;
     list-style-type: circle;
-    gap: 35px;
+    gap: 33px;
     font-size: 18px;
     text-underline-offset: 3.5px;
 }
 
-.header__links-list-item {
+/* .header__links-list-item {
 
-}
+} */
 
-.header__links-list-item_no-bullit { /* объединить с "header__link_active" */
+.header__links-list-item_no-bullit {
     list-style: none;
 }
 
-.header__link {
+/* .header__link {
 
-}
+} */
 
-.header__link_active { /* объединить с "header__links-list-item_no-bullit" */
+.header__link_active {
     text-decoration: none;
 }
 
 .header__logo { /* сделать блок по середине */
-    width: 140px;
+    flex: 0 0 140px;
+    /* width: 140px; */
 }
 
-.header__logo-image {
-    
-}
+/* .header__logo-image {
 
-/* .header > .address {
-    flex: 1 2 0;
-    justify-content: flex-end;
 } */
+
+.header__address {
+    flex: 1 2 0;
+}
 
 /* main */
 
@@ -82,7 +80,7 @@
     gap: 180px;
 }
 
-/*cover - section*/
+/* cover - section */
 
 .cover {
     width: 100%;
@@ -110,9 +108,9 @@
     position: relative;
 }
 
-.aligned-text {
+/* .aligned-text {
 
-}
+} */
 
 .aligned-text_center {
     align-self: center;
@@ -173,16 +171,15 @@
 .lots__card-list {
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
-    gap: 25px;
-
     flex-wrap: wrap;
     flex-grow: 1;
+    gap: 25px;
+    list-style-type: none;
 }
 
-.lots__card-list-item {
+/* .lots__card-list-item {
     flex-grow: 1;
-}
+} */
 
 .card-link {
     display: block;
@@ -238,9 +235,9 @@
     gap: 25px;
 }
 
-.about__column {
-    /* align-self: flex-start; */
-}
+/* .about__column {
+    align-self: flex-start;
+} */
 
 .about__logo {
     display: flex;
@@ -271,8 +268,6 @@
     gap: 25px;
 }
 
-
-
 .lots__look-more-link {
     font-size: 20px;
     padding-left: 40px;
@@ -290,9 +285,9 @@
     margin: 180px 0 90px;
 }
 
-.footer__menu {
+/* .footer__menu {
 
-}
+} */
 
 .footer__menu-list {
     display: flex;
@@ -303,21 +298,21 @@
     text-underline-offset: 3.5px;
 }
 
-.footer__menu-list-item {
+/* .footer__menu-list-item {
 
-}
+} */
 
-.footer__menu-link {
+/* .footer__menu-link {
 
-}
+} */
 
 .footer__menu-link_active {
     text-decoration: none;
 }
 
-.footer__social {
+/* .footer__social {
 
-}
+} */
 
 .footer__social-list {
     display: flex;
@@ -329,10 +324,10 @@
     width: 48px;
 }
 
-.footer__social-link {
+/* .footer__social-link {
 
-}
+} */
 
-.footer__social-icon {
+/* .footer__social-icon {
 
-}
+} */
