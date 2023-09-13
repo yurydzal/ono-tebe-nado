@@ -25,17 +25,20 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
     padding: 0 50px;
     align-items: center;
-    margin: 90px 0 90px;
+    margin: 92px 0 92px;
 }
 
 .header__menu {
-    flex: 1 1 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
 }
 
 .header__links-list {
+    margin-right: auto;
     display: flex;
     list-style-type: circle;
     gap: 33px;
@@ -43,33 +46,33 @@
     text-underline-offset: 3.5px;
 }
 
-/* .header__links-list-item {
-
-} */
-
 .header__links-list-item_no-bullit {
     list-style: none;
 }
-
-/* .header__link {
-
-} */
 
 .header__link_active {
     text-decoration: none;
 }
 
-.header__logo { /* сделать блок по середине */
-    flex: 0 0 140px;
-    /* width: 140px; */
+.header__logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
-/* .header__logo-image {
-
-} */
+.header__logo-image {
+    width: 140px;
+}
 
 .header__address {
-    flex: 1 2 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.header__address > .address {
+    margin-left: auto;
 }
 
 /* main */
@@ -108,10 +111,6 @@
     position: relative;
 }
 
-/* .aligned-text {
-
-} */
-
 .aligned-text_center {
     align-self: center;
 }
@@ -132,7 +131,7 @@
     align-self: end;
     display: flex;
     font-size: 22px;
-    line-height: 128%;
+    line-height: 127%;
     gap: 78px;
     position: relative;
 }
@@ -176,10 +175,6 @@
     gap: 25px;
     list-style-type: none;
 }
-
-/* .lots__card-list-item {
-    flex-grow: 1;
-} */
 
 .card-link {
     display: block;
@@ -235,10 +230,6 @@
     gap: 25px;
 }
 
-/* .about__column {
-    align-self: flex-start;
-} */
-
 .about__logo {
     display: flex;
     background-color: black;
@@ -285,10 +276,6 @@
     margin: 180px 0 90px;
 }
 
-/* .footer__menu {
-
-} */
-
 .footer__menu-list {
     display: flex;
     flex-direction: column;
@@ -298,21 +285,9 @@
     text-underline-offset: 3.5px;
 }
 
-/* .footer__menu-list-item {
-
-} */
-
-/* .footer__menu-link {
-
-} */
-
 .footer__menu-link_active {
     text-decoration: none;
 }
-
-/* .footer__social {
-
-} */
 
 .footer__social-list {
     display: flex;
@@ -323,11 +298,3 @@
 .footer__social-list-item {
     width: 48px;
 }
-
-/* .footer__social-link {
-
-} */
-
-/* .footer__social-icon {
-
-} */
