@@ -96,11 +96,11 @@
     position: relative;
 }
 
-.aligned-text_center {
+.aligned-text-center {
     align-self: center;
 }
 
-.aligned-text_right {
+.aligned-text-right {
     align-self: flex-end;
 }
 
